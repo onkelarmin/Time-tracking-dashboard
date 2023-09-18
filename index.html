@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="info">
+        <div class="user">
+          <img
+            src="./assets/images/image-jeremy.png"
+            alt="Jeremy Robson"
+            class="user-photo"
+          />
+          <p>Report for</p>
+          <p class="user-name">Jeremy Robson</p>
+        </div>
+        <div class="controls">
+          <ul class="controls-list">
+            <li>
+              <button class="controls-btn" data-timeframe="daily">Daily</button>
+            </li>
+            <li>
+              <button class="controls-btn selected" data-timeframe="weekly">
+                Weekly
+              </button>
+            </li>
+            <li>
+              <button class="controls-btn" data-timeframe="monthly">
+                Monthly
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="category" data-category="work">
+        <div class="category-bg">
+          <img
+            src="./assets/images/icon-work.svg"
+            alt=""
+            class="category-icon"
+          />
+        </div>
+        <div class="category-content">
+          <header class="category-header">
+            <p class="category-title">Work</p>
+            <a href="#" class="ellipsis">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </header>
+          <main class="category-main">
+            <p class="time-current">0hrs</p>
+            <p class="time-previous">
+              Last <span class="period">Week</span> -
+              <span class="value">0hrs</span>
+            </p>
+          </main>
+        </div>
+      </div>
+
+      <div class="category" data-category="play">
+        <div class="category-bg">
+          <img
+            src="./assets/images/icon-play.svg"
+            alt=""
+            class="category-icon"
+          />
+        </div>
+        <div class="category-content">
+          <header class="category-header">
+            <p class="category-title">Play</p>
+            <a href="#" class="ellipsis">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </header>
+          <main class="category-main">
+            <p class="time-current">0hrs</p>
+            <p class="time-previous">
+              Last <span class="period">Week</span> -
+              <span class="value">0hrs</span>
+            </p>
+          </main>
+        </div>
+      </div>
+
+      <div class="category" data-category="study">
+        <div class="category-bg">
+          <img
+            src="./assets/images/icon-study.svg"
+            alt=""
+            class="category-icon"
+          />
+        </div>
+        <div class="category-content">
+          <header class="category-header">
+            <p class="category-title">Study</p>
+            <a href="#" class="ellipsis">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </header>
+          <main class="category-main">
+            <p class="time-current">0hrs</p>
+            <p class="time-previous">
+              Last <span class="period">Week</span> -
+              <span class="value">0hrs</span>
+            </p>
+          </main>
+        </div>
+      </div>
+
+      <div class="category" data-category="exercise">
+        <div class="category-bg">
+          <img
+            src="./assets/images/icon-exercise.svg"
+            alt=""
+            class="category-icon"
+          />
+        </div>
+        <div class="category-content">
+          <header class="category-header">
+            <p class="category-title">Exercise</p>
+            <a href="#" class="ellipsis">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </header>
+          <main class="category-main">
+            <p class="time-current">0hrs</p>
+            <p class="time-previous">
+              Last <span class="period">Week</span> -
+              <span class="value">0hrs</span>
+            </p>
+          </main>
+        </div>
+      </div>
+
+      <div class="category" data-category="social">
+        <div class="category-bg">
+          <img
+            src="./assets/images/icon-social.svg"
+            alt=""
+            class="category-icon"
+          />
+        </div>
+        <div class="category-content">
+          <header class="category-header">
+            <p class="category-title">Social</p>
+            <a href="#" class="ellipsis">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </header>
+          <main class="category-main">
+            <p class="time-current">0hrs</p>
+            <p class="time-previous">
+              Last <span class="period">Week</span> -
+              <span class="value">0hrs</span>
+            </p>
+          </main>
+        </div>
+      </div>
+
+      <div class="category" data-category="self-care">
+        <div class="category-bg">
+          <img
+            src="./assets/images/icon-self-care.svg"
+            alt=""
+            class="category-icon"
+          />
+        </div>
+        <div class="category-content">
+          <header class="category-header">
+            <p class="category-title">Self Care</p>
+            <a href="#" class="ellipsis">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="#BBC0FF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </header>
+          <main class="category-main">
+            <p class="time-current">0hrs</p>
+            <p class="time-previous">
+              Last <span class="period">Week</span> -
+              <span class="value">0hrs</span>
+            </p>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
