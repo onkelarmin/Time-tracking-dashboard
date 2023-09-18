@@ -1,4 +1,11 @@
-import data from './data.json' assert { type: 'json' }
+let data = []
+
+fetch('./data.json')
+  .then((res) => res.json())
+  .then((d) => {
+    data = d
+    renderData()
+  })
 
 const controlsList = document.querySelector('.controls-list')
 const timeframeButtons = [...document.querySelectorAll('.controls-btn')]
@@ -55,5 +62,3 @@ function getTimeframe() {
   const timeframe = selectedButton.dataset.timeframe
   return timeframe
 }
-
-renderData()
