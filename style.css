@@ -119,7 +119,7 @@ body {
 
   display: grid;
   gap: 1.5rem;
-  width: min(100%, var(--max-width) + var(--inline-padding) * 2);
+  width: min(100%, var(--max-width));
 
   margin-inline: auto;
 }
